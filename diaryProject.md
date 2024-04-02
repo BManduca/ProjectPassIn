@@ -23,6 +23,8 @@ ________________________________________________________________________________
     - Instalando programa:
         - sudo apt-get install dbeaver-ce
 
+<br />
+
 ### Virtualenv
 - **instalação**: pip3 install virtualenv
 - **Create and Use Virtual Environments**
@@ -30,10 +32,43 @@ ________________________________________________________________________________
 - **Activate a virtual environment**
     - source .venv/bin/activate
 
+<br />
+
 ### SQLAlchemy
 - **instalação**: pip3 install SQLAlchemy
 - **doc**: https://www.sqlalchemy.org/docs/
 
+<br />
+
 ### Pytest
 - **instalação**: pip3 install pytest
 - **doc**: https://docs.pytest.org/en/stable/.
+
+<br />
+
+### Pylint
+- Pylint é um analisador de código estático para python 2 ou 3.
+- **instalação**: pip3 install pylint
+
+<br />
+
+### Pre-commit
+- Um framework para gerenciar e manter pre-commits multilíngues
+- instalação: pip3 install pre-commit -> pre-commit install
+
+<br />
+
+### Flask
+- Framework de aplicação Web, que foi projetado com intuito de escalar aplicações web complexas, de uma maneira inicial rápida e fácil.
+- instalação: pip3 install -U Flask
+
+<br />
+
+### Criando um arquivo geral de configuração Pylint
+- pylint --generate-rcfile > .pylintrc
+
+<br />
+
+### Requirements
+- Arquivo para registrar as dependências e quais são suas versões
+- .venv/bin/pip3 freeze > requirements.txt    
