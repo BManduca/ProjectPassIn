@@ -37,7 +37,14 @@ ________________________________________________________________________________
 <br>
 <br> -->
 
-<p align="center">
+<!-- <p align="center">
     <img style="margin: 0 50px 0 0" src="src/assets/flask.png" width="120px"/>
-    <!-- <img style="margin: 0 50px 0 0" src="src/assets/ViteJs.png" width="120px"/> -->
-</p>
+</p> -->
+
+<div style="display:grid grid-template: 100px 1fr / 50px 1fr">
+    <p align="center">
+        <img style="margin: 0 50px 0 0" src="src/assets/python_transparent.png" width="150px"/>
+        <img style="margin: 0 50px 0 0" src="src/assets/sqlite_transparent.png" width="100px"/>
+    </p>
+    
+</div>
