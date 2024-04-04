@@ -8,6 +8,7 @@ class DBConnectionHandler:
             "sqlite",
             "storage.db"
         )
+        # motor de conexão com nosso DB
         self.__engine = None
         self.__session = None
         
@@ -20,10 +21,11 @@ class DBConnectionHandler:
     
     def __enter__(self):
         session_maker = sessionmaker()
+        # UMA SESSÃO BASEADA NO MECANISMO DE CONEXÃO QUE TEMOS COM NOSSO DB
         self.__session = session_maker(bind=self.__engine)
         return self
         
-        
     def __exit__(self, exc_type, exc_value, exc_tb):
+        # FECHANDO CONEXÃO
         self.__session.close()
         
