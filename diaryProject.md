@@ -72,3 +72,34 @@ ________________________________________________________________________________
 ### Requirements
 - Arquivo para registrar as dependências e quais são suas versões
 - .venv/bin/pip3 freeze > requirements.txt    
+
+
+___________________________________________________________________________________________________
+
+## Anotações
+
+- Entidade vs. Repositório
+    - Repositório: É aonde realizamos as ações, inserimos dados, buscamos dados...
+
+    - Entidade: Declaramos como que é a estrutura de armazenamento, por exemplo, nossa tabela Events.
+
+- uuid
+    - Estrutura de identidade com base em texto
+
+- abrindo a session -> database.session
+            
+- fazendo uma querie em Events -> .query(Events)
+            
+- filtrando pelo id, aonde id do event tem que ser o id que vai 
+ser enviado no metodo -> .filter(Events.id == event_id)
+            
+- retornando um único registro -> .one()
+            
+```
+event = (
+    database.session
+        .query(Events)    
+        .filter(Events.id == event_id)
+        .one()
+)
+```

@@ -13,6 +13,7 @@ disable=
       C0301, #line-too-long
       R0903, # too-few-public-methods,
       C0209, # consider-using-f-string
+      C0103, # invalid-name
 
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and

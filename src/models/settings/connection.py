@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-class DBConnectionHandler:
+# para evitar a exportação da classe DBConnectionHandler, declaramos ela como privada.
+class __DBConnectionHandler:
     # método construtor
     def __init__(self) -> None:
         self.__connection_string = "{}:///{}".format(
@@ -10,7 +11,7 @@ class DBConnectionHandler:
         )
         # motor de conexão com nosso DB
         self.__engine = None
-        self.__session = None
+        self.session = None
         
     def connect_to_db(self) -> None:
         # passando a nossa string de conexão para criação da nossa engine
@@ -22,10 +23,13 @@ class DBConnectionHandler:
     def __enter__(self):
         session_maker = sessionmaker()
         # UMA SESSÃO BASEADA NO MECANISMO DE CONEXÃO QUE TEMOS COM NOSSO DB
-        self.__session = session_maker(bind=self.__engine)
+        self.session = session_maker(bind=self.__engine)
         return self
         
     def __exit__(self, exc_type, exc_value, exc_tb):
         # FECHANDO CONEXÃO
-        self.__session.close()
+        self.session.close()
+
+# objeto único para toda aplicação        
+db_connection_handler = __DBConnectionHandler()
         
