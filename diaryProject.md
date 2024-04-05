@@ -137,4 +137,23 @@ with db_connection_handler as database:
 
 - BODY => 'corpo' da response que será recebido após executar a request
 
+
+## Criando um gerente de eventos
+- teremos um construtor para utilizar nosso EventsRepository, ou seja, iremos usar uma instancia do EventsRepository, para que seja possível a classe toda utilizar os beneficios da mesma
+- Método register, para registrar os eventos, aonde teremos um um http_request como param, para retornar o HttpResponse
+
+
+```
+from src.models.repository.events_repository import EventsRepository
+from src.http_types.http_response import HttpResponse
+
+class EventHandler:
+    def __init__(self) -> None:
+        self.__events_repository = EventsRepository()
+        
+        
+    def register(self, http_request) -> HttpResponse:
+        pass
+```
+
 <!-- 6:43 -->
