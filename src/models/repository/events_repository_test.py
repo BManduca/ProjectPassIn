@@ -4,13 +4,13 @@ from .events_repository import EventsRepository
 
 db_connection_handler.connect_to_db()
 
-@pytest.mark.skip(reason="Se executado, irá gerar novo registro no banco de dados")
+# @pytest.mark.skip(reason="Se executado, irá gerar novo registro no banco de dados")
 def test_insert_event():
     event = {
-        "uuid": "event003",
-        "title": "title event 003",
-        "slug": "slug event 003",
-        "maximum_attendees": 27
+        "uuid": "event004",
+        "title": "title event 004",
+        "slug": "slug event 004",
+        "maximum_attendees": 45
     }
     events_repository = EventsRepository()
     response = events_repository.insert_event(event)
