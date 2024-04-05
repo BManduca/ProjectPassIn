@@ -62,6 +62,11 @@ ________________________________________________________________________________
 - Framework de aplicação Web, que foi projetado com intuito de escalar aplicações web complexas, de uma maneira inicial rápida e fácil.
 - instalação: pip3 install -U Flask
 
+### Flask-Cors
+- É uma extensão do Flask para lidar com Cross Origin Resource Sharing (CORS), tornando possível o cross-origin AJAX
+- Basicamente para conseguirmos ter uma boa comunicação com o front-end, caso seja efetuado algum tipo de acesso
+- instalação: pip install -U Flask-Cors
+
 <br />
 
 ### Criando um arquivo geral de configuração Pylint

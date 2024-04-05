@@ -45,6 +45,7 @@ ________________________________________________________________________________
     <p align="center">
         <img style="margin: 0 50px 0 0" src="src/assets/python_transparent.png" width="150px"/>
         <img style="margin: 0 50px 0 0" src="src/assets/sqlite_transparent.png" width="100px"/>
+        <img style="margin: 0 50px 0 0" src="src/assets/flask.png" width="120px"/>
     </p>
     
 </div>
