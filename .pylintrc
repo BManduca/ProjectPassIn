@@ -5,6 +5,7 @@ disable=
       C0115, # missing-class-docstring
       C0116, # missing-function-docstring
       W0703, # Catching to general exception Exception
+      W0707, # raise-missing-from
       W0718, # broad-exception-caught
       W0719, # broad-exception-raised
       W0105, # pointless-string-statement

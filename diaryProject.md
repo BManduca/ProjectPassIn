@@ -103,3 +103,28 @@ event = (
         .one()
 )
 ```
+
+## Tratativa de Erros
+- Para realizar a tratativa de erros de uma forma mais 'humanizada' podemos envolver a parte de lógica de inserção de dados com um bloco try-catch
+
+```
+def insert_event(self, events_info: Dict) -> Dict:
+# entrando no contexto (criando a seção)
+with db_connection_handler as database:
+    try:
+        event = Events(
+            id = events_info.get("uuid"),
+            title = events_info.get("title"),
+            details = events_info.get("details"),
+            slug = events_info.get("slug"),
+            maximum_attendees = events_info.get("maximum_attendees")
+        )
+        database.session.add(event)
+        database.session.commit()
+    
+        return events_info
+    except Exception as exception:
+        database.session.rollback()
+```
+
+<!-- 6:43 -->

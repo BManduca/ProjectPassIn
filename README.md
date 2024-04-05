@@ -18,7 +18,7 @@
 </h2>
 
 - For API documentation, visit the link: https://nlw-unite-nodejs.onrender.com/docs
-___________________________________________________________________________________________________ 
+___________________________________________________________________________________________________
 
 <br />
 <br />
@@ -47,4 +47,24 @@ ________________________________________________________________________________
         <img style="margin: 0 50px 0 0" src="src/assets/sqlite_transparent.png" width="100px"/>
     </p>
     
+</div>
+
+
+
+<br />
+<br />
+
+<div>
+    <h1 align="center">
+        Software used
+    </h1>
+</div>
+
+<br>
+<br>
+
+<div style="display:grid grid-template: 100px 1fr / 50px 1fr">
+    <p align="center">
+        <img style="margin: 0 50px 0 0" src="src/assets/dbeaver.svg" width="100px"/>
+    </p>
 </div>
