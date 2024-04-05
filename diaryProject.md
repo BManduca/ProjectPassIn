@@ -132,4 +132,9 @@ with db_connection_handler as database:
         database.session.rollback()
 ```
 
+## Respostas HTTP
+- STATUS_CODE => retorno que vai ser recebido ao fazer uma request
+
+- BODY => 'corpo' da response que será recebido após executar a request
+
 <!-- 6:43 -->
