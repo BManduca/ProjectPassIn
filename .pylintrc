@@ -10,11 +10,13 @@ disable=
       W0719, # broad-exception-raised
       W0105, # pointless-string-statement
       E0401, # import-error
+      E1102, # not-callable
       C0303, # Trailing whitespace
       C0301, #line-too-long
       R0903, # too-few-public-methods,
       C0209, # consider-using-f-string
       C0103, # invalid-name
+      
 
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
